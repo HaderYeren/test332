@@ -1,11 +1,11 @@
 :root {
-  --bg: #d8d8d8;
-  --paper: #f2f4f7;
-  --panel: #bcc7da;
-  --link: #2e67ff;
-  --text: #171717;
-  --muted: #7c7c7c;
-  --accent: #4576ff;
+  --bg: #dcdcdc;
+  --frame: #ebedf0;
+  --sheet: #ffffff;
+  --sidebar: #bfc9dd;
+  --text: #222222;
+  --muted: #8f8f8f;
+  --accent: #4d6fe5;
 }
 
 * {
@@ -14,90 +14,76 @@
 
 body {
   margin: 0;
-  font-family: "Inter", Arial, sans-serif;
   background: var(--bg);
+  font-family: "Montserrat", Arial, sans-serif;
   color: var(--text);
 }
 
-.page-shell {
-  max-width: 860px;
-  margin: 28px auto;
+.page {
+  width: 820px;
+  margin: 30px auto;
 }
 
-.page-title {
-  color: #8d8d8d;
+.page-label {
+  margin: 0 0 8px;
+  color: #8a8a8a;
   font-size: 14px;
-  margin-bottom: 8px;
 }
 
-.resume-sheet {
-  background: var(--paper);
-  border: 24px solid #e2e4e8;
-  min-height: 1120px;
+.resume {
+  background: var(--frame);
+  border: 24px solid var(--frame);
   display: grid;
   grid-template-columns: 225px 1fr;
+  min-height: 1120px;
 }
 
 .sidebar {
-  background: var(--panel);
-  padding-bottom: 24px;
+  background: var(--sidebar);
+  padding-bottom: 28px;
 }
 
-.avatar-wrap {
-  height: 260px;
-  margin-bottom: 22px;
-  background: linear-gradient(180deg, #a8c2f0 0 62%, #eed33f 62%);
-  display: grid;
-  place-items: center;
+.photo {
+  height: 248px;
+  background: #a7c0ea;
 }
 
-.avatar {
-  width: 155px;
-  height: 155px;
-  border-radius: 50%;
-  background:
-    radial-gradient(circle at 58% 30%, #fce6d0 0 16%, transparent 17%),
-    radial-gradient(circle at 52% 70%, #0f0f10 0 29%, transparent 30%),
-    radial-gradient(circle at 50% 50%, #f7d4b5 0 54%, #33241c 55% 57%, transparent 58%),
-    radial-gradient(circle at 50% 50%, #f7d4b5 0 58%, #0000 59%),
-    linear-gradient(180deg, #ebdb34, #ebdb34);
-  box-shadow: 0 6px 14px rgb(0 0 0 / 18%);
+.photo svg {
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
-.info-block {
-  padding: 0 24px;
-  margin-bottom: 26px;
+.side-block {
+  padding: 24px 24px 0;
 }
 
-.info-block h3 {
-  margin: 0 0 10px;
-  font-size: 30px;
-  font-size: 31px;
-  transform: scale(0.54);
-  transform-origin: left center;
-  line-height: 0.85;
+.side-block h3 {
+  margin: 0 0 12px;
+  font-size: 28px;
+  line-height: 1;
 }
 
-.info-block p,
-.info-block li {
+.side-block p,
+.side-block li {
+  margin: 0 0 8px;
   font-size: 12px;
-  margin: 4px 0;
-  color: #2f2f2f;
+  line-height: 1.45;
 }
 
-.info-block ul {
+.side-block ul {
   margin: 0;
-  padding-left: 12px;
+  padding-left: 14px;
 }
 
-.info-block a {
-  color: var(--link);
+.side-block a {
+  color: var(--accent);
 }
 
 .content {
-  background: #fff;
   margin: 24px;
-  padding: 50px 52px;
+  background: var(--sheet);
+  padding: 48px 52px 46px;
 }
 
 .role {
@@ -107,73 +93,64 @@ body {
 }
 
 h1 {
-  margin: 5px 0 8px;
-  font-size: 50px;
-  font-size: 44px;
-  line-height: 1.03;
+  margin: 8px 0 14px;
+  font-size: 48px;
+  line-height: 1;
 }
 
-.summary {
-  margin: 0 0 28px;
-  color: #646464;
-  font-size: 13px;
-  line-height: 1.6;
-  max-width: 580px;
+.about {
+  margin: 0 0 34px;
+  font-size: 12px;
+  line-height: 1.7;
+  color: #666666;
+  max-width: 500px;
 }
 
-.content-block {
-  margin-bottom: 28px;
+.block {
+  margin-bottom: 32px;
 }
 
 h2 {
-  margin: 0 0 10px;
-  font-size: 33px;
-  font-size: 31px;
-  transform: scale(0.58);
-  transform-origin: left center;
-  line-height: 0.88;
+  margin: 0 0 12px;
+  font-size: 32px;
+  line-height: 1;
 }
 
-.content-block ol {
+.block ol {
   margin: 0;
-  padding-left: 16px;
+  padding-left: 18px;
 }
 
-.content-block li {
-  margin: 4px 0;
+.block ol li {
+  margin-bottom: 6px;
   font-size: 12px;
+  font-weight: 700;
 }
 
-.content-block li span {
-  color: var(--muted);
-  margin-left: 8px;
+.block a {
+  color: var(--accent);
+  font-weight: 500;
 }
 
-.content-block a {
-  color: var(--link);
+.block ol span {
+  font-weight: 500;
+  color: #7d7d7d;
 }
 
 .job {
-  margin-bottom: 16px;
+  margin-bottom: 22px;
 }
 
 .job h3,
-.content-block h3 {
+.uni {
   margin: 0;
-  font-size: 20px;
-  font-size: 19px;
-  transform: scale(0.7);
-  transform-origin: left center;
-  line-height: 0.9;
+  font-size: 18px;
+  line-height: 1.35;
 }
 
 h4 {
-  margin: 6px 0;
-  font-size: 20px;
-  font-size: 18px;
-  transform: scale(0.7);
-  transform-origin: left center;
-  line-height: 0.9;
+  margin: 10px 0 0;
+  font-size: 16px;
 }
 
 .accent {
@@ -181,23 +158,23 @@ h4 {
 }
 
 .date {
-  margin: 6px 0 8px;
-  color: #ababab;
+  margin: 6px 0 10px;
   font-size: 11px;
+  color: #a6a6a6;
 }
 
 .date span {
-  margin: 0 6px;
+  margin: 0 8px;
 }
 
 .job ul {
   margin: 0;
-  padding-left: 13px;
+  padding-left: 15px;
 }
 
 .job li {
-  margin: 4px 0;
-  color: #616161;
+  margin-bottom: 4px;
+  color: #676767;
   font-size: 12px;
-  line-height: 1.4;
+  line-height: 1.5;
 }
