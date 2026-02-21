@@ -7,27 +7,42 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <main class="page-shell">
-      <div class="page-title">Resume</div>
-      <section class="resume-sheet">
+    <div class="page">
+      <p class="page-label">Resume</p>
+
+      <main class="resume">
         <aside class="sidebar">
-          <div class="avatar-wrap">
-            <div class="avatar"></div>
+          <div class="photo">
+            <svg viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg" aria-label="profile illustration" role="img">
+              <rect width="320" height="320" fill="#9db7e8"/>
+              <path d="M12 95c8-26 38-55 68-68-18 27-18 71-2 95-13 16-24 37-31 58-20-25-47-53-35-85z" fill="#1f3f3f"/>
+              <path d="M46 318c3-100 38-142 114-144 80-2 131 43 131 144" fill="#f0e34f"/>
+              <ellipse cx="162" cy="102" rx="54" ry="66" fill="#f6d7bc"/>
+              <path d="M108 112h105v24c0 27-24 49-52 49-30 0-53-22-53-49z" fill="#f4cfb2"/>
+              <path d="M107 135c13 26 34 39 56 39 21 0 40-11 51-32 3 17 4 43-10 56-11 10-27 17-44 17-19 0-38-8-49-21-14-17-13-40-4-59z" fill="#111"/>
+              <ellipse cx="140" cy="104" rx="6" ry="5" fill="#202020"/>
+              <ellipse cx="181" cy="104" rx="6" ry="5" fill="#202020"/>
+              <path d="M145 128c10 4 23 4 33 0" stroke="#784f38" stroke-width="3" fill="none" stroke-linecap="round"/>
+              <rect x="128" y="96" width="24" height="14" rx="4" fill="none" stroke="#2f2f2f" stroke-width="3"/>
+              <rect x="168" y="96" width="24" height="14" rx="4" fill="none" stroke="#2f2f2f" stroke-width="3"/>
+              <line x1="152" y1="103" x2="168" y2="103" stroke="#2f2f2f" stroke-width="3"/>
+              <path d="M120 36c17-20 54-33 93-26 26 4 42 17 52 38-26-13-56-18-85-15-22 2-43 8-60 19z" fill="#2f2f2f"/>
+            </svg>
           </div>
 
-          <section class="info-block">
+          <section class="side-block">
             <h3>Contacts</h3>
             <p><strong>C:</strong> +38 888 888 88 88</p>
             <p><strong>E:</strong> <a href="mailto:t.qoitinskiy@gmail.com">t.qoitinskiy@gmail.com</a></p>
           </section>
 
-          <section class="info-block">
+          <section class="side-block">
             <h3>Tech Skills</h3>
             <ul>
               <li>HTML5</li>
@@ -40,7 +55,7 @@
             </ul>
           </section>
 
-          <section class="info-block">
+          <section class="side-block">
             <h3>Soft Skills</h3>
             <ul>
               <li>Scrum</li>
@@ -54,37 +69,29 @@
         <section class="content">
           <p class="role">Front-End Developer</p>
           <h1>Taras Qoitinskiy</h1>
-          <p class="summary">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
-            maecenas accumsan lacus vel facilisis.
+          <p class="about">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan
+            lacus vel facilisis.
           </p>
 
-          <section class="content-block">
+          <section class="block">
             <h2>Projects</h2>
             <ol>
-              <li>
-                <a href="#">https://hellen.p.goit.global/</a>
-                <span>[ HTML5, CSS3 ]</span>
-              </li>
-              <li>
-                <a href="#">https://cryptohub.p.goit.global/</a>
-                <span>[ JavaScript ]</span>
-              </li>
-              <li>
-                <a href="#">https://kidslike.p.goit.global/</a>
-                <span>[ React.js, Node.js ]</span>
-              </li>
+              <li><a href="#">https://hellen.p.goit.global/</a> ................. <span>[ HTML5, CSS3 ]</span></li>
+              <li><a href="#">https://cryptohub.p.goit.global/</a> ........... <span>[ JavaScript ]</span></li>
+              <li><a href="#">https://kidslike.p.goit.global/</a> ................ <span>[ React.js, Node.js ]</span></li>
             </ol>
           </section>
 
-          <section class="content-block">
+          <section class="block">
             <h2>Work Experience</h2>
+
             <article class="job">
               <h3>Front-End Developer <span class="accent">Freelance</span></h3>
               <p class="date">September 2019 - up to now <span>|</span> Country</p>
               <ul>
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
                 <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
                 <li>Risus commodo viverra maecenas.</li>
                 <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</li>
@@ -95,7 +102,7 @@
               <h3>Manager <span class="accent">Banderogusak &amp; Co.</span></h3>
               <p class="date">March 2015 - October 2018 <span>|</span> Country</p>
               <ul>
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod labore et dolore magna aliqua.</li>
                 <li>Quis ipsum suspendisse ultrices gravida.</li>
                 <li>Risus commodo viverra maecenas.</li>
               </ul>
@@ -112,14 +119,14 @@
             </article>
           </section>
 
-          <section class="content-block">
+          <section class="block">
             <h2>Education</h2>
-            <h3 class="accent">National University of Management</h3>
+            <h3 class="accent uni">National University of Management</h3>
             <h4>Management</h4>
             <p class="date">September 2009 - June 2014 <span>|</span> Country</p>
           </section>
         </section>
-      </section>
-    </main>
+      </main>
+    </div>
   </body>
 </html>
